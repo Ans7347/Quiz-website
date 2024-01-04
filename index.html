@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_quiz.css">
+    <title>C++ Fundamentals Quiz</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="quiz.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>C++ Fundamentals Quiz</h1>
+        <form id="quizForm">
+            <div class="question" id="question1">
+                <p>1. What is the correct syntax for declaring a variable in C++?</p>
+                <label><input type="radio" name="q1" value="a"> int variableName;</label>
+                <label><input type="radio" name="q1" value="b"> variableName = int;</label>
+                <label><input type="radio" name="q1" value="c"> declare variableName as int;</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question2" style="display: none;">
+                <p>2. How do you print "Hello, World!" in C++?</p>
+                <label><input type="radio" name="q2" value="a"> console.log("Hello, World!");</label>
+                <label><input type="radio" name="q2" value="b"> System.out.println("Hello, World!");</label>
+                <label><input type="radio" name="q2" value="c"> cout << "Hello, World!";</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question3" style="display: none;">
+                <p>3. Identify the incorrect Constructor type in C++?</p> 
+                <label><input type="radio" name="q3" value="a"> Friend Constructor</label>
+                <label><input type="radio" name="q3" value="b"> Default Constructor</label>
+                <label><input type="radio" name="q3" value="c"> Parameterized Constructor</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question4" style="display: none;">
+                <p>4. C++ uses which approach?</p>
+                <label><input type="radio" name="q4" value="a"> bottom-up</label>
+                <label><input type="radio" name="q4" value="b"> right-left</label>
+                <label><input type="radio" name="q4" value="c"> top-down</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question5" style="display: none;">
+                <p>5. Which of the following data type is supported in C but not in C++?</p>
+                <label><input type="radio" name="q5" value="a"> int </label>
+                <label><input type="radio" name="q5" value="b"> bool</label>
+                <label><input type="radio" name="q5" value="c"> double</label>
+                <label><input type="radio" name="q5" value="d"> float</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question6" style="display: none;">
+                <p>6. What is the correct syntax for declaring arrays in C++?</p>
+                <label><input type="radio" name="q6" value="a"> array arr[10]</label>
+                <label><input type="radio" name="q6" value="b"> array{10}</label>
+                <label><input type="radio" name="q6" value="c"> int arr[10]</label>
+                <label><input type="radio" name="q6" value="d"> int arr</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question7" style="display: none;">
+                <p>7. Identify the scope resolution operator in C++</p>
+                <label><input type="radio" name="q7" value="a"> :</label>
+                <label><input type="radio" name="q7" value="b"> ::</label>
+                <label><input type="radio" name="q7" value="c"> ?</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question8" style="display: none;">
+                <p>8. Identify the correct definition of * operator in C++?</p>
+                <label><input type="radio" name="q8" value="a"> Address of operato</label>
+                <label><input type="radio" name="q8" value="b"> value of address operator</label>
+                <label><input type="radio" name="q8" value="c"> Multiplication operator</label>
+                <label><input type="radio" name="q8" value="d"> All of the above</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question9" style="display: none;">
+                <p>9. goto can be classified into?</p>
+                <label><input type="radio" name="q9" value="a"> label</label>
+                <label><input type="radio" name="q9" value="b"> variable</label>
+                <label><input type="radio" name="q9" value="c"> operator</label>
+                <label><input type="radio" name="q9" value="d"> function</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="question" id="question10" style="display: none;">
+                <p>10. When can an inline function be expanded in C++?</p>
+                <label><input type="radio" name="q10" value="a"> Runtime</label>
+                <label><input type="radio" name="q10" value="b"> Compile time</label>
+                <label><input type="radio" name="q10" value="c"> Never gets expanded</label>
+                <label><input type="radio" name="q10" value="d"> All of the above</label>
+                <button type="button" onclick="nextQuestion()">Next</button>
+            </div>
+        </form>
+        <div id="result" style="display: none;">
+            <p id="resultMessage"></p>
+            <button type="button" onclick="restartQuiz()">Restart</button>
+        </div>
+    </div>
+</body>
+</html>
